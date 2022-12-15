@@ -100,7 +100,7 @@ class UpdateEmployeeComponent extends Component {
         MortgageService.updateMortgage(mortgage, this.state.id).then( res => {
             Swal.fire({
                 title: "Success!",
-                text: "Mortgage with id " +mortgage.id+ " created",
+                text: "Mortgage with id " +mortgage.id+ " Updated",
                 icon: "success",
                 button: "Back",
             }).then((result) => {
