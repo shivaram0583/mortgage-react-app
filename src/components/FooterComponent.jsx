@@ -14,7 +14,7 @@ class FooterComponent extends Component {
         return (
             <div id="footer">
             <footer>
-                <span> All Rights Reserved 2020 @JavaGuides </span>
+                <span> All Rights Reserved 2021 @shivaram0583 </span>
             </footer>
         </div>
         )
