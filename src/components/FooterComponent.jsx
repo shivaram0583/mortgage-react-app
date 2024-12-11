@@ -12,11 +12,11 @@ class FooterComponent extends Component {
 
     render() {
         return (
-            <div id="footer">
             <footer>
-                <span> All Rights Reserved 2021 @shivaram0583 </span>
-            </footer>
+        <div class="footer-content">
+            All Rights Reserved 2021 shivaram0583@github.com
         </div>
+    </footer>
         )
     }
 }
