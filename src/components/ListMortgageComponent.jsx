@@ -51,16 +51,42 @@ class ListMortgageComponent extends Component {
                 <br></br>
                  <h2 className="text-center">Mortgage Records</h2>
                  <br></br>
-                 <div className = "row">
-                    <form className="form-inline">
-                    <button className="btn btn-primary mb-2" onClick={this.addMortgage}> Create Mortgage</button>
-                    <br></br>
-                    <div className="form-group mx-sm-3 mb-2">
-                        <input class="form-control" id="inputPassword2" placeholder="Search here..." value={this.state.id}/>
-                        </div>
-                        <button className="btn btn-primary mb-2" onClick={this.handleSearch}>Search Mortgage</button>
-                    </form>
+                 <div className="row">
+                    <div className="col-md-12 d-flex justify-content-start" style={{ padding: "0 20px" }}>
+                        <button 
+                            className="btn" 
+                            onClick={this.addMortgage}
+                            style={{
+                                marginRight: "10px",
+                                borderRadius: "20px",
+                                padding: "8px 20px",
+                                backgroundColor: "#ff5722",
+                                color: "white",
+                                border: "none",
+                                boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+                                transition: "0.3s"
+                            }}
+                        >
+                            <i className="fas fa-plus"></i> Create
+                        </button>
+                        <button 
+                            className="btn" 
+                            onClick={this.handleSearch}
+                            style={{
+                                borderRadius: "20px",
+                                padding: "8px 20px",
+                                backgroundColor: "#03a9f4",
+                                color: "white",
+                                border: "none",
+                                boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+                                transition: "0.3s"
+                            }}
+                        >
+                            <i className="fas fa-search"></i> Search
+                        </button>
+                    </div>
                  </div>
+                 <br></br>
                  <div className = "row" style={{overflow: "scroll", height: "510px"}}>
                         <table className = "table table-striped table-bordered">
 

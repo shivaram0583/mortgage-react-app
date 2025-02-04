@@ -9,6 +9,8 @@ import CreateMortgageComponent from './components/CreateMortgageComponent';
 import UpdateMortgageComponent from './components/UpdateMortgageComponent';
 import ViewMortgageComponent from './components/ViewMortgageComponent';
 import SearchMortgageComponent from './components/SearchMortgageComponent';
+import LoginComponent from './components/LoginComponent';
+import MenuComponent from './components/MenuComponent';
 
 function App() {
   return (
@@ -17,15 +19,17 @@ function App() {
               <HeaderComponent />
                 <div className="container">
                     <Switch> 
-                          <Route path = "/" exact component = {ListMortgageComponent}></Route>
+                          <Route path = "/" exact component = {MenuComponent}></Route>
+                          <Route path = "/login" component = {LoginComponent}></Route>
                           <Route path = "/mortgage" component = {ListMortgageComponent}></Route>
                           <Route path = "/add-mortgage/_add" component = {CreateMortgageComponent}></Route>
                           <Route path = "/view-mortgage/:id" component = {ViewMortgageComponent}></Route>
-                          <Route path = "/add-mortgage/:id" component = {UpdateMortgageComponent}></Route> 
-                          <Route path = "/search-mortgage/:id" component = {SearchMortgageComponent}></Route>
+                          <Route path = "/update-mortgage/:id" component = {UpdateMortgageComponent}></Route> 
+                          <Route path = "/search-mortgage" component = {SearchMortgageComponent}></Route>
                           </Switch>
                 </div>
-              <FooterComponent />
+              {/* Remove FooterComponent from rendering */}
+              {/* <FooterComponent /> */}
         </Router>
     </div>
     
